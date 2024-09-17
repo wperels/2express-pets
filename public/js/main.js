@@ -33,3 +33,15 @@ function handleButtonClick(e) {
     }
   })
 }
+
+document.querySelector(".form-overlay").style.display = ""
+
+function openOverlay(el) {
+  document.querySelector(".form-overlay").classList.add("form-overlay--is-visible")
+}
+
+document.querySelector(".close-form-overlay").addEventListener("click", closeOverlay)
+
+function closeOverlay(el) {
+  document.querySelector(".form-overlay").classList.remove("form-overlay--is-visible")
+}
