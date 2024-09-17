@@ -454,6 +454,12 @@ textarea.form-field {
   transition: all 0.33s ease-out;
 }
 
+.form-overlay--is-visible {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
 .form-overlay-inner {
   max-width: 880px;
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.07);
@@ -463,4 +469,76 @@ textarea.form-field {
   align-self: center;
   display: grid;
   grid-template-columns: 340px 1fr;
+}
+
+.form-photo {
+  order: 1;
+  grid-row: 1;
+  position: relative;
+}
+
+.form-photo p {
+  line-height: 1.2;
+  font-size: 0.9375rem;
+  color: #555;
+  position: absolute;
+  margin: 0;
+  padding: 16px 25px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.63);
+  backdrop-filter: blur(2px);
+}
+
+.form-photo p strong {
+  color: #000;
+  font-size: 2.25rem;
+  font-weight: normal;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.justify-right {
+  display: flex;
+  justify-content: end;
+}
+
+.form-content {
+  padding: 38px 54px;
+  position: relative;
+}
+
+.close-form-overlay {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 12px;
+  color: rgba(0, 0, 0, 0.41);
+  font-size: 2.25 rem;
+  transform: scaleX(1.2);
+  opacity: .5;
+}
+
+.pet-contact-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0 0 0 12px;
+  position: relative;
+  top: 4px;
+  opacity: .5;
+  cursor: pointer;
+  outline: none;
+}
+
+.pet-contact-btn:hover {
+  opacity: 1;
 }
