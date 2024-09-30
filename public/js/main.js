@@ -38,15 +38,21 @@ document.querySelector(".form-overlay").style.display = ""
 
 function openOverlay(el) {
   document.querySelector(".form-content").dataset.id = el.dataset.id
-  document.querySelector(".form-photo p strong").textContent = el.closest(".pet-card").querySelector(".pet-name").textContent
+  document.querySelector(".form-photo p strong").textContent = el.closest(".pet-card").querySelector(".pet-name").textContent.trim() + "."
   document.querySelector(".form-photo img").src = el.closest(".pet-card").querySelector(".pet-card-photo img").src
   document.querySelector(".form-overlay").classList.add("form-overlay--is-visible")
+  //Opens the form overlay and populates it with data from the given pet card element.
+  document.querySelector(":root").style.overflow = "hidden"
+
 }
 
 document.querySelector(".close-form-overlay").addEventListener("click", closeOverlay)
 
 function closeOverlay(el) {
   document.querySelector(".form-overlay").classList.remove("form-overlay--is-visible")
+  //Closes the form overlay and resets the root element's overflow style.
+  document.querySelector(":root").style.overflow = ""
+
 }
 
 document.querySelector(".form-content").addEventListener("submit", async function (e) {
@@ -61,4 +67,21 @@ document.querySelector(".form-content").addEventListener("submit", async functio
   }
 
   console.log(userValues)
+
+  fetch("/submit-contact", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(userValues)
+  })
+
+  document.querySelector(".thank-you").classList.add("thank-you--visible")
+  //Note do not include () to call the function.
+  setTimeout(closeOverlay, 2500)
+  setTimeout(() => {
+    document.querySelector(".thank-you").classList.remove("thank-you--visible")
+    document.querySelector("#name").value = ""
+    document.querySelector("#email").value = ""
+    document.querySelector("#secret").value = ""
+    document.querySelector("#comment").value = ""
+  }, 2900)
 })
