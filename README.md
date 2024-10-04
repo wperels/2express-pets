@@ -4,7 +4,7 @@ Files: C:\Users\wpere\Local Sites\netlify-pets\netlify "C:\Users\wpere\Local Sit
 
 https://twoexpress-pets.onrender.com "C:\Users\wpere\Local Sites\2express-pets" C:\Users\wpere\Local Sites\2express-pets>
 
-VS Code -> terminal -> command prompt C:\Users\wpere\Local Sites\2express-pets>npm run dev
+VS Code -> terminal -> command prompt C:\Users\wpere\Local Sites\2nextjs-pets>>npm run dev
 
 netlify-pets: https://netlify-pet.netlify.app/ also http://localhost:8888/ 2express-pets: https://twoexpress-pets.onrender.com/#view-pets also http://localhost:3000/ Nextjs-pets: also http://localhost:4000/
 
