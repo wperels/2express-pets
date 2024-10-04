@@ -1,4 +1,4 @@
-This is the Pet Time app using Render for host not Netlify. https://www.udemy.com/course/become-a-web-developer-bootcamp/learn/lecture/41942634#questions
+This is the Pet Time app using react & Next.js. https://www.udemy.com/course/become-a-web-developer-bootcamp/learn/lecture/41942634#questions
 
 Files: C:\Users\wpere\Local Sites\netlify-pets\netlify "C:\Users\wpere\Local Sites" "C:\Users\wpere\Local Sites\netlify-pets"
 
