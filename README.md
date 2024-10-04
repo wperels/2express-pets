@@ -1,4 +1,4 @@
-This is the Pet Time app using react & Next.js. https://www.udemy.com/course/become-a-web-developer-bootcamp/learn/lecture/41942634#questions
+This is the Pet Time app using react & Next.js called 2nextjs-pets. https://www.udemy.com/course/become-a-web-developer-bootcamp/learn/lecture/41942634#questions
 
 Files: C:\Users\wpere\Local Sites\netlify-pets\netlify "C:\Users\wpere\Local Sites" "C:\Users\wpere\Local Sites\netlify-pets"
 
@@ -18,13 +18,10 @@ https://app.netlify.com/sites/netlify-pet/overview
 
 Open VS Code start up "netlify dev" and push changes with Git to the GitHub account. Open Netlify and make sure new changes are available then "Building -> Published". Find in the browser at "https://netlify-pet.netlify.app/"
 
-Environment variables: CONNECTIONSTRING=mongodb+srv://petAdoption:JAfozURAyvbAJoRr@cluster0.bjwzdyc.mongodb.net/PetsAdoptionCenter?retryWrites=true&w=majority&appName=Cluster0 CLOUDNAME=dwrqcfteb CLOUDINARYKEY=987266461673268 CLOUDINARYSECRET=k-muhB4NdLYlwC4ll8GyZd32SYM
-
-Login: ADMINUSERNAME=learn ADMINPASSWORD=javascript
-
 Instructions forked from LearnWebCode/express-pets to use express.
 After cloning / downloading these files you'll need to rename the env.txt file to instead be named .env
 In your .env file you'll need to enter your MongoDB connection string value, as well as your Cloudinary Cloud Name, Cloudinary API Key, and Cloudinary API Secret values.
 In your command-line run the npm install command to pull in the dependencies.
 You can start the project locally by running the npm run dev command.
-You can then visit the project in your web browser by visiting localhost:3000 or whatever port number you might have chosen in your .env file.# Nextjs-pets
+You can then visit the project in your web browser by visiting localhost:3000 or whatever port number you might have chosen in your .env file.
+2nextjs-pets is on localhost:4000
